@@ -1,0 +1,42 @@
+html {
+    font-family: 'Times New Roman';
+}
+
+body {
+    width: 50%;
+    max-width: 1000px;
+    min-width: 600px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: blue;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 30px;
+    border-style: none;
+    margin-top: 30px;
+    /* margin-left: 50px; */
+}
+
+
+#wrapper {
+    box-sizing: border-box;
+    text-align: center;
+    width: 800px;
+    height: 200px;
+    font-size: 25px;
+}
+
+h1 {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    width: 800px;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
