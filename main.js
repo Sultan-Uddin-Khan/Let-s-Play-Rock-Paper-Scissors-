@@ -2,17 +2,16 @@
 const computerChoiceElm=document.querySelector('#computer-choice')
 const yourChoiceElm=document.querySelector('#your-choice')
 const resultElm=document.querySelector('#result')
-const possibleChoices=document.querySelectorAll('button')
+const resetbtnElm=document.querySelector('#Reset')
+const possibleChoices=document.querySelectorAll('.button')
 let yourChoice;
 let computerChoice;
 let result;
-let reset;
 possibleChoices.forEach(possibleChoice=>possibleChoice.addEventListener('click',(evt)=>{
 yourChoice=evt.target.id;
 yourChoiceElm.textContent=yourChoice;
 genComputerChoice();
 getResult();
-resetValues();
 }))
  function genComputerChoice(){
   const randomNumber=Math.floor(Math.random()*possibleChoices.length)+1;
@@ -33,5 +32,14 @@ function getResult(){
     resultElm.textContent=result;
 }
 
+function resetValues(){
+    computerChoice='';
+    yourChoice='';
+    result='';
+    resultElm.textContent=result;
+    computerChoiceElm.textContent=computerChoice;
+    yourChoiceElm.textContent=yourChoice;
+}
+resetbtnElm.addEventListener('click',resetValues);
 
 

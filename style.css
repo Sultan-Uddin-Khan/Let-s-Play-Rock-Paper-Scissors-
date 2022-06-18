@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    width: 50%;
+    width: 200%;
     max-width: 1000px;
     min-width: 600px;
     margin: 0 auto;
@@ -11,12 +11,14 @@ body {
 
 button {
     background-color: blue;
-    width: 200px;
+    width: 100px;
     height: 50px;
-    border-radius: 25px;
-    font-size: 30px;
+    border-radius: 0px;
+    font-size: 20px;
     border-style: none;
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-bottom:70px ;
+    margin-right:100px;
     /* margin-left: 50px; */
 }
 
@@ -24,7 +26,7 @@ button {
 #wrapper {
     box-sizing: border-box;
     text-align: center;
-    width: 800px;
+    width: 1000px;
     height: 200px;
     font-size: 25px;
 }
@@ -33,7 +35,7 @@ h1 {
     background-color: green;
     color: #fff;
     text-align: center;
-    width: 800px;
+    width: 1000px;
 }
 
 p {
